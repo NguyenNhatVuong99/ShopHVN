@@ -1,0 +1,40 @@
+.composition {
+	position: relative;
+
+	&__photo {
+		position: absolute;
+		width: 50%;
+		// box-shadow: $shadow;
+		border-radius: 2rem;
+		cursor: pointer;
+		transition: .2s ease-in;
+		&--photo2 {
+            width: 60%;
+			left: 6rem;
+			top: -3rem;
+		}
+
+		&--photo1 {
+            width: 30%;
+			left: 4rem;
+			top: 18rem;
+		}
+
+		&--photo3 {
+            width: 40%;
+
+			right: 4rem;
+			top: 20rem;
+		}
+		&:hover{
+			transform: scale(1.05);
+			z-index: 100;
+		}
+	}
+	&:hover &__photo:not(:hover) {
+
+        transform: scale(0.9);
+
+    }
+
+}

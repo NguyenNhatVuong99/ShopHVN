@@ -1,0 +1,181 @@
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear:both;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+
+@mixin fontReadex {
+    font-family: "Readex Pro", "Nunito", Arial, Helvetica, sans-serif;
+}
+
+@mixin fontSen {
+    font-family: "Sen", "Nunito", Arial, Helvetica, sans-serif;
+}
+
+@mixin fontInter {
+    font-family: "Inter", "Nunito", Arial, Helvetica, sans-serif;
+
+}
+
+@mixin title2 {
+    @include fontReadex();
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0;
+}
+
+@mixin button {
+    @include displayFlex();
+    width: 122px;
+    height: 38px;
+    background-color: #FFCB45;
+    border-radius: 50px;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+
+    &:hover {
+        background-color: darken(#FFCB45, 10%);
+
+    }
+}
+
+@mixin display {
+    //styleName: Display;
+    @include fontReadex();
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+
+@mixin des {
+
+    @include fontReadex();
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+
+@mixin title3 {
+    //styleName: title2;
+    @include fontReadex();
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+@mixin header {
+    //styleName: Header;
+    @include fontReadex();
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0px;
+}
+
+@mixin headerLine {
+    //styleName: Headline;
+    //styleName: Headline;
+    @include fontReadex();
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    color: #1D1D1D;
+}
+
+@mixin body-text {
+    //styleName: body-text;
+    @include fontReadex();
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(29, 29, 29, 0.7);
+    margin: 0;
+}
+
+@mixin letFood {
+    @include fontReadex();
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0px;
+}
+
+@mixin headerLine2 {
+    color: black;
+    @include fontReadex();
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0px;
+}
+
+@mixin signIn {
+    //styleName: button;
+    @include fontReadex();
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+
+}
+
+@mixin button-heading {
+    @include fontInter();
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+
+}
+
+@mixin heading2 {
+    @include fontReadex();
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+
+@mixin detail {
+    @include fontReadex();
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}

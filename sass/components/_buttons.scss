@@ -1,0 +1,65 @@
+.btn {
+	&:link,
+	&:visited {
+        text-decoration: none;
+        padding: 0.5rem 3rem;
+        display: inline-block;
+        border-radius: 10rem;
+        font-weight: 600;
+        font-size: 1.6rem;
+        position: relative;
+        transition: all .2s;
+	}
+	&:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+	}
+	&:active {
+		outline: none;
+		transform: translateY(-1px);
+		box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+	}
+	&--white {	
+		background-color: $color-white;
+		color:$color-grey;
+	}
+	&--animated {
+		animation: moveInBottom 2s ease-in-out 1s;
+		animation-fill-mode: backwards
+	}
+}
+
+.btn-text{
+	&:link,
+	&:visited {
+		text-decoration: none;
+		font-size: $default-font-size;
+		color: $color-medium-blue;
+		display: inline-block;
+		border-bottom: 1px solid $color-medium-blue;
+		padding: 0.3rem;
+		transition: .2s ease-in;
+	}
+	&:hover{
+		background-color: $color-medium-blue;
+		color: $color-white;
+		border: none;
+		box-shadow: 0 1rem 2rem rgba($color-black, .2);
+		transform: translateY(-.2rem) scale(1.1);
+	}
+	&:active{
+		box-shadow: $shadow;
+		transform: translateY(0)
+	}
+}
+.btn--large{
+    padding: 12px;
+}
+.btn--blue{
+	background-color: $color-medium-blue;
+	color: $color-white;
+}
+.btn--yellow{
+    background-color: $color-dark-yellow;
+    color: $color-gray;
+}

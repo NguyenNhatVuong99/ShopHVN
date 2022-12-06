@@ -1,0 +1,81 @@
+.section {
+    &__service {
+        height: auto;
+        @include padding(80px 204px);
+        @include displayFlexCol(center, center);
+
+        &--title {
+            @include title2();
+            color: $yellowBg;
+        }
+
+        &--ask {
+            @include padding(7px 0 28px 0);
+            @include header();
+        }
+
+        &--content {
+            width: 611px;
+            @include title2();
+            text-align: center;
+            padding-bottom: 32px;
+        }
+
+
+
+    }
+
+    &__service-main {
+        @include displayFlexCenter(space-between, center, 165px);
+
+    }
+
+    &___service-rows {
+        width: 234px;
+        @include displayFlexCol(center, center);
+
+        &--title {
+            @include heading2();
+
+
+
+        }
+
+        &--text {
+            @include headerLine()
+        }
+    }
+
+    &__ourmenu {
+        @include padding(0 124px 0 124px);
+        @include displayFlexCol(center, center);
+
+        &--title {
+            @include title2();
+            color: rgb(151, 151, 73);
+        }
+
+        &--ask {
+            @include padding(7px 0 28px 0);
+            @include header();
+        }
+
+        &--content {
+            width: 611px;
+            @include title2();
+            text-align: center;
+            padding-bottom: 32px;
+        }
+
+        &--btn {
+            @include padding(11px 21px);
+            border: none;
+            border-radius: 58px;
+            background-color: $yellowBg;
+            cursor: pointer;
+            @include button-heading();
+            margin-top: 50px;
+
+        }
+    }
+}

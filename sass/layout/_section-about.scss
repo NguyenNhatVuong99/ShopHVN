@@ -1,0 +1,88 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.section {
+    &__about {
+
+        @include padding(45px 141px 80px 200px);
+        height: 410px;
+        @include displayFlexCenter(flex-start, flex-start, 101px)
+    }
+
+
+    &__about-left {
+
+
+        &--food {
+            @include displayFlexCenter(flex-start, flex-start)
+        }
+
+    }
+
+    &__about-mon12 {
+        width: 238px;
+        height: 238px;
+    }
+
+    &__about-right {
+        flex: 1;
+        @include displayFlexCol(flex-start, flex-start);
+
+        &--title {
+            @include title2();
+            color: $yellowBg;
+            padding-top: 21px;
+        }
+
+        &--ask {
+            width: 481px;
+            @include padding(9px 0 32px 0);
+            @include header();
+        }
+
+
+    }
+
+    &__about-comment {
+        width: 451px;
+        background-color: #F1F1F1;
+        border-radius: 10px;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 19px;
+        flex-wrap: wrap;
+        
+
+        &--content {
+            @include body-text();
+        }
+
+    }
+
+    &__about-auth {
+        @include displayFlexCol(flex-start, flex-start, 13px);
+
+        &--name {
+            @include headerLine();
+        }
+
+    }
+
+      
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+   
+}

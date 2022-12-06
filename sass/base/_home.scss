@@ -1,0 +1,27 @@
+.section {
+	// background-color: $color-grey-light-1;
+	// padding: 25rem 0;
+    // margin-top: -25rem;
+    height: auto;
+    @include padding(80px 204px);
+    @include displayFlexCol(center, center);
+
+}
+.section-skills {
+	background-color: #f7f7f7;
+	margin-top: -20rem;
+    padding: 20rem 0;
+	background-image: linear-gradient(to right bottom,
+			rgba($color-light-blue, .8),
+			rgba($color-medium-blue, .8),
+			rgba($color-dark-blue, .8)),
+		url("../img/background1.jpg");
+	background-size: cover;
+	clip-path: ellipse(70% 50% at 50% 50%);
+}
+.section-courses{
+	margin-top: -15rem;
+    padding: 20rem 0;
+	background-color: $color-grey-light-1;
+
+}

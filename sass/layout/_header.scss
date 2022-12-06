@@ -1,0 +1,87 @@
+.header {
+    background-color: $color-medium-yellow;
+    // background-color: $color-medium-yellow;
+    padding: $padding;
+    color: #333;
+    @include displayFlex();
+    position: relative;
+    width: 100%;
+    transition: 0.6s ease-in-out all;
+    border-bottom:1px solid $color-dark-yellow ;
+    &__logo {
+        @include displayFlex(center, center);
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+
+        &--icon {
+            @include displayFlex();
+        }
+
+    }
+
+    &__links {
+
+        flex-grow: 1;
+        @include displayFlex(flex-end, center, 37px);
+        align-items: center;
+        padding-right: 74px;
+        font-size: 1.8rem;
+        font-weight: bold;
+
+        * {
+            // @include title2();
+            text-decoration: none;
+            color: rgba(29, 29, 29, 0.7);
+        }
+    }
+
+    &__find {
+        padding-right: 32.5px;
+    }
+
+    &__buy {
+        padding-right: 28px;
+    }
+
+    &__sign {
+        @include displayFlex();
+        width: 122px;
+        height: 38px;
+        background-color: #FFCB45;
+        border-radius: 50px;
+        // @include button();
+        cursor: pointer;
+        box-sizing: border-box;
+
+        &:hover {
+            background-color: darken(#FFCB45, 10%);
+        }
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    background-color: #fbefd0;
+    transition: 0.6s ease-in-out all;
+    z-index: 1000;
+}
+
+.sticky+ main {
+    padding-top: 92px;
+}
+.wrap{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width:"your desired width";
+  }
+  .truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

@@ -1,0 +1,213 @@
+// .shopping-cart {
+//     right: -32rem;
+//     margin-right: 60px;
+//     float: right;
+//     background: white;
+//     width: 320px;
+//     position: relative;
+//     border-radius: 3px;
+//     padding: 20px;
+//     z-index: 1;
+//     opacity: 0;
+//     // transition:all 0.6s ease-out;
+//     position: absolute;
+
+//     &--active{
+//         opacity: 1;
+//         right: 0;
+//         z-index: 1000;
+//         position : fixed;
+//         top: 92px;
+//     }
+//     .shopping-cart-header {
+//         border-bottom: 1px solid #E8E8E8;
+//         padding-bottom: 4rem;
+
+//         .shopping-cart-total {
+//             float: right;
+//             font-size: 1.5rem;
+//             font-weight: 600;
+//         }
+//     }
+
+//     .shopping-cart-list {
+
+//         padding-top: 20px;
+//         font-size: 1.6rem;
+
+//         li {
+//             margin-bottom: 18px;
+//             content: "";
+//             display: table;
+//             clear: both;
+//         }
+
+//         img {
+//             float: left;
+//             margin-right: 12px;
+//         }
+
+//         .item-name {
+//             display: block;
+//             font-weight: 600;
+//             padding-top: 10px;
+//             font-size: 1.6rem;
+//         }
+
+//         .item-price {
+//             color: $color-gray;
+//             margin-right: 8px;
+//             font-size: 1.6rem;
+
+//         }
+
+//         .item-quantity {
+//             color:  $color-gray;
+//             font-size: 1.6rem;
+
+//         }
+//     }
+
+// }
+
+// .shopping-cart:after {
+//     bottom: 100%;
+//     left: 49%;
+//     border: solid transparent;
+//     content: " ";
+//     height: 0;
+//     width: 0;
+//     position: absolute;
+//     pointer-events: none;
+//     border-bottom-color: white;
+//     border-width: 15px;
+//     margin-left: -15px;
+// }
+
+
+// .button {
+//     background: $main-color;
+//     color: white;
+//     text-align: center;
+//     padding: 12px;
+//     text-decoration: none;
+//     display: block;
+//     border-radius: 3px;
+//     font-size: 1.6rem;
+//     margin: 25px 0 15px 0;
+
+//     &:hover {
+//         background: lighten($main-color, 3%);
+//     }
+// }
+
+// .shopping-cart-item:after {
+//     content: "";
+//     display: table;
+//     clear: both;
+// }
+.shopping-cart {
+    right: -32rem;
+    margin-right: 60px;
+    float: right;
+    background: white;
+    width: 320px;
+    position: relative;
+    border-radius: 3px;
+    padding: 20px;
+    z-index: 1;
+    opacity: 0;
+    transition:all 0.6s ease-out;
+    position: absolute;
+
+    &--active{
+        opacity: 1;
+        right: 0;
+        position: fixed;
+        top:90px;
+    }
+    .shopping-cart-header {
+        border-bottom: 1px solid #E8E8E8;
+        padding-bottom: 4rem;
+
+        .shopping-cart-total {
+            float: right;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+
+    .shopping-cart-list {
+
+        padding-top: 20px;
+       
+        li {
+            margin-bottom: 18px;
+        }
+
+        img {
+            width: 20%;
+            float: left;
+            margin-right: 12px;
+        }
+
+        .item-name {
+            display: block;
+            font-weight: 600;
+            font-size: 1.6rem;
+        }
+
+        .item-price {
+            color: $color-gray;
+            margin-right: 8px;
+            font-size: 1.6rem;
+
+        }
+
+        .item-quantity {
+            color:  $color-gray;
+            font-size: 1.6rem;
+
+        }
+    }
+
+}
+
+.shopping-cart:after {
+    bottom: 100%;
+    left: 40%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: white;
+    border-width: 15px;
+    margin-left: -15px;
+}
+
+
+.button {
+    background: $main-color;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    margin: 25px 0 15px 0;
+
+    &:hover {
+        background: lighten($main-color, 3%);
+    }
+}
+
+.shopping-cart-item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+

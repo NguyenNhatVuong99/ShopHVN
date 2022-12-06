@@ -1,0 +1,86 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.footer {
+    background-color: #FFF9EA;
+
+    &__foot {
+        @include padding(81px 238px 91px 130px);
+        @include displayFlexCenter(space-between, flex-start);
+    }
+
+    &__food {
+        width: 300px;
+        @include displayFlexCol(flex-start, flex-start, 12px);
+
+        &--title {
+            @include letFood()
+        }
+
+        &--des {
+            @include des()
+        }
+
+        &--icon {
+            @include displayFlexCenter(center, center, 12px);
+
+        }
+    }
+
+
+    &__company {
+        @include displayFlexCol(flex-start, flex-start, 12px);
+
+        &--title {
+            @include letFood()
+        }
+
+        &--des {
+            @include des()
+        }
+    }
+
+    &__policy {
+        @include displayFlexCol(flex-start, flex-start, 12px);
+
+        &--title {
+            @include letFood()
+        }
+
+        &--des {
+            @include des()
+        }
+    }
+
+    &__touch {
+        @include displayFlexCol(flex-start, flex-start, 12px);
+
+        &--title {
+            @include letFood()
+        }
+
+        &--des {
+            @include des()
+        }
+    }
+
+    &--flex-end {
+        width: 100%;
+        @include displayFlexCol(center, center);
+
+        &>div:nth-child(1) {
+            width: 82%;
+            height: 2px;
+            background-color: black;
+        }
+
+        &>div:nth-child(2) {
+            @include detail();
+            text-align: center;
+            @include padding(47px 0);
+        }
+    }
+
+
+}
