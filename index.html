@@ -2,26 +2,26 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-        <!--Add this-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <!--Add this-->
-        <link rel="stylesheet" href="./css/style.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!--Add this-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!--Add this-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Add this-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Add this-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-        <title>HVN</title>
-    </head>
+    <title>SELFTAUGHT | Skill Website</title>
 </head>
 
 <body>
@@ -52,38 +52,15 @@
         <div class="header__find">
             <a href=""><img src="./imgs/timkiem.png" alt="" /></a>
         </div>
-        <div class="header__buy" id="cart">
-            <i class="fa fa-shopping-cart cart-icon"></i>
+        <div class="header__buy">
+            <a href="#" id="cart"> <img src="./imgs/hang.png" alt="" /></a>
         </div>
-        <!-- <button class="btn">
-                <img src="./imgs/singin (2).png" alt="" />Sign in
-              </button> -->
-
-        <div id="auth">
-            <a href="" data-target="login" class="btn btn--yellow ">
-                Sign in
-            </a>`
+        <div id="signed" class="header__signin">
         </div>
-
-        </div>
-        <!-- <div class="header__menu-box">
-			<a href="#"><img src="./img/logooutline.png" class="header__logo" alt="logo"></a>
-		</div> -->
     </header>
-    <main>
 
-        <section class=" section-shopping-cart shopping-cart" id="shopping-cart">
-            <!-- <div class="shopping-cart-header">
-                <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
-                <div class="shopping-cart-total">
-                    <span class="lighter-text">Total:</span>
-                    <span class="main-color-text">$2,229.97</span>
-                </div>
-            </div> -->
-        
-        </section>
-        <!--end shopping-cart -->
-        <section class=" section-hero">
+    <main>
+        <section class="section-hero">
             <div class="row">
                 <div class="col-1-of-2">
                     <h3 class="heading-primary">
@@ -98,250 +75,263 @@
                 </div>
             </div>
         </section>
-        <section class="section__service" id="howit">
-            <p class="section__service--title"> How it works</p>
-            <p class="section__service--ask">What We service</p>
-            <p class="section__service--content">Product Quality Is Our Priority, And Always Guarantees Halal And
-                Safety
-                Until It Is In Your Hands.</p>
-            <div class="section__service-main">
-                <div class="section__service-rows">
+        <div class="section">
+            <section>
 
-                    <img src="./imgs/order 1.png" alt="">
-                    <p class="section__service-rows--title">
-                        Easy To Order
+                <div class="section__serve" id="howit">
+                    <p class="section__serve--title"> How it works</p>
+                    <p class="section__serve--ask">Dịch vụ của chúng tôi</p>
+                    <p class="section__serve--content">Chất lượng sản phẩm là ưu tiên hàng đầu của chúng tôi và luôn đảm
+                        bảo ngon và an toàn cho đến khi nó đến tay bạn.</p>
+                    <div id="howit_col" class="section__serve-main">
+                        <!-- <div class="section__serve-rows">
+
+                            <img src="./imgs/order 1.png" alt="">
+                            <p class="section__serve-rows--title">
+                                Easy To Order
+                            </p>
+                            <p class="section__serve-rows--text">
+                                You only order through the app
+                            </p>
+
+                        </div> -->
+                        <!-- </div> -->
+                    </div>
+            </section>
+            <section>
+                <div class="section__ourmenu" id="menu">
+                    <p class="section__ourmenu--title">Our menu</p>
+                    <p class="section__ourmenu--ask">Our Popular Menu</p>
+                    <p class="section__ourmenu--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                        aliquam
                     </p>
-                    <p class="section__service-rows--text">
-                        You only order through the app
-                    </p>
 
-                </div>
+                    <div class="section__ourmenu-food">
+                        <div class="section__ourmenu-mie">
+                            <img src="./imgs/mon1 (1).png" alt="" />
 
-                <div class="section__service-rows">
-
-                    <img src="./imgs/delivery 1.png" alt="">
-
-                    <p class="section__service-rows--title">
-                        Fastest Delivery
-                    </p>
-                    <p class="section__service-rows--text">
-                        Delivery will be on time
-                    </p>
-                </div>
-
-                <div class="section__service-rows">
-                    <img src="./imgs/courier 1.png" alt="">
-                    <p class="section__service-rows--title">
-                        Best Quality
-                    </p>
-                    <p class="section__service-rows--text">
-                        The best quality of food for you
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="section__ourmenu" id="menu">
-            <p class="section__ourmenu--title">Our menu</p>
-            <p class="section__ourmenu--ask">Our Popular Menu</p>
-            <p class="section__ourmenu--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam
-            </p>
-
-            <div class="section__ourmenu__food">
-            </div>
-            <button class="section__ourmenu--btn load-more">More Menu</button>
-        </section>
-        <section class="section__about" id="comment">
-            <div class="section__about-left">
-                <img src="./imgs//mon3.png" alt="">
-                <div class="section__about-left--food">
-                    <img src="./imgs//mon2.png" class="section__about-mon12" alt="">
-                    <img src="./imgs//mon1.png" class="section__about-mon12" alt="">
-                </div>
-
-            </div>
-            <div class="section__about-right">
-                <p class="section__about-right--title">What the say</p>
-                <p class="section__about-right--ask">What Our Customers Say About Us</p>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="slider-item swiper-slide">
-                            <div class="slider-item-content">
-                                <div class="section__about-comment">
-                                    <img src="./imgs/people1.png" alt="">
-
-                                    <div class="section__about-auth">
-
-                                        <p class="section__about-auth--name">Naura Silvana</p>
-                                        <div class="section__about-auth--star">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (4).png" alt="">
-                                        </div>
-                                    </div>
-
-                                    <p class="section__about-comment--content">“Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        elit ut aliquam, purus sit amet luctus venenatis.”</p>
+                            <div class="section__ourmenu-info">
+                                <p class="section__ourmenu-info--name">Mie Ramen</p>
+                                <div class="section__ourmenu-info--text">lorem ipsum</div>
+                                <div class="section__ourmenu-info--price">
+                                    <p>$ 20.2</p>
+                                    <img src="./imgs/Vector (2).png" alt="" />
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-item swiper-slide">
-                            <div class="slider-item-content">
-                                <div class="section__about-comment">
-                                    <img src="./imgs/people1.png" alt="">
 
-                                    <div class="section__about-auth">
+                        <div class="section__ourmenu-mie">
+                            <img src="./imgs/mon1 (4).png" alt="" />
 
-                                        <p class="section__about-auth--name">Naura Silvana</p>
-                                        <div class="section__about-auth--star">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (4).png" alt="">
-                                        </div>
-                                    </div>
-
-                                    <p class="section__about-comment--content">“Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        elit ut aliquam, purus sit amet luctus venenatis.”</p>
+                            <div class="section__ourmenu-info">
+                                <p class="section__ourmenu-info--name">Salad Tahu</p>
+                                <div class="section__ourmenu-info--text">lorem ipsum</div>
+                                <div class="section__ourmenu-info--price">
+                                    <p>$ 20.2</p>
+                                    <img src="./imgs/Vector (3).png" alt="" />
                                 </div>
                             </div>
-
                         </div>
+                        <div class="section__ourmenu-mie">
+                            <img src="./imgs/mon1 (2).png" alt="" />
 
-                        <div class="slider-item swiper-slide">
-                            <div class="slider-item-content">
-                                <div class="section__about-comment">
-                                    <img src="./imgs/people1.png" alt="">
-
-                                    <div class="section__about-auth">
-
-                                        <p class="section__about-auth--name">Naura Silvana</p>
-                                        <div class="section__about-auth--star">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (4).png" alt="">
-                                        </div>
-                                    </div>
-
-                                    <p class="section__about-comment--content">“Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        elit ut aliquam, purus sit amet luctus venenatis.”</p>
+                            <div class="section__ourmenu-info">
+                                <p class="section__ourmenu-info--name">Roti Bakar</p>
+                                <div class="section__ourmenu-info--text">lorem ipsum</div>
+                                <div class="section__ourmenu-info--price">
+                                    <p>$ 20.2</p>
+                                    <img src="./imgs/Vector (3).png" alt="" />
                                 </div>
                             </div>
-
                         </div>
+                        <div class="section__ourmenu-mie">
+                            <img src="./imgs/mon1 (3).png" alt="" />
 
-                        <div class="slider-item swiper-slide">
-                            <div class="slider-item-content">
-                                <div class="section__about-comment">
-                                    <img src="./imgs/people1.png" alt="">
-
-                                    <div class="section__about-auth">
-
-                                        <p class="section__about-auth--name">Naura Silvana</p>
-                                        <div class="section__about-auth--star">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (5).png" alt="">
-                                            <img src="./imgs/Vector (4).png" alt="">
-                                        </div>
-                                    </div>
-
-                                    <p class="section__about-comment--content">“Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        elit ut aliquam, purus sit amet luctus venenatis.”</p>
+                            <div class="section__ourmenu-info">
+                                <p class="section__ourmenu-info--name">Spaghetti</p>
+                                <div class="section__ourmenu-info--text">lorem ipsum</div>
+                                <div class="section__ourmenu-info--price">
+                                    <p>$ 20.2</p>
+                                    <img src="./imgs/Vector (3).png" alt="" />
                                 </div>
                             </div>
-
+                        </div>
+                    </div>
+                    <button class="section__ourmenu--btn">More Menu</button>
+                </div>
+            </section>
+            <section>
+                <div class="section__about" id="comment">
+                    <div class="section__about-left">
+                        <img src="./imgs//mon3.png" alt="">
+                        <div class="section__about-left--food">
+                            <img src="./imgs//mon2.png" class="section__about-mon12" alt="">
+                            <img src="./imgs//mon1.png" class="section__about-mon12" alt="">
                         </div>
 
                     </div>
-                    <div class="slider-buttons">
-                        <button class="swiper-button-prev">Prev</button>
-                        <button class="swiper-button-next">Next</button>
+                    <div class="section__about-right">
+                        <p class="section__about-right--title">What the say</p>
+                        <p class="section__about-right--ask">What Our Customers Say About Us</p>
+                        <div class="section__about-comment">
+                            <img src="./imgs/people1.png" alt="">
+
+                            <div class="section__about-auth">
+
+                                <p class="section__about-auth--name">Naura Silvana</p>
+                                <div class="section__about-auth--star">
+                                    <img src="./imgs/Vector (5).png" alt="">
+                                    <img src="./imgs/Vector (5).png" alt="">
+                                    <img src="./imgs/Vector (5).png" alt="">
+                                    <img src="./imgs/Vector (5).png" alt="">
+                                    <img src="./imgs/Vector (4).png" alt="">
+                                </div>
+                            </div>
+
+                            <p class="section__about-comment--content">“Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit ut aliquam, purus sit amet luctus venenatis.”</p>
+                        </div>
                     </div>
-
-                    <div class="swiper-pagination"></div>
                 </div>
-
-            </div>
-        </section>
-        <section class="section section__discount">
-            <div class="section__discount-background">
-                <div class="section__discount-content">
-                    <p class="section__discount-content--title">
-                        Join our member and get discount up to 50%
-                    </p>
-                    <button class="section__discount-content--btn">Sign up</button>
+            </section>
+            <section>
+                <div class="section__discount">
+                    <div class="section__discount-background">
+                        <div class="section__discount-content">
+                            <p class="section__discount-content--title">
+                                Join our member and get discount up to 50%
+                            </p>
+                            <button id="discount-signup" class="section__discount-content--btn">Sign up</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
-    <footer class="footer" id="footer">
-        <div class="footer__foot">
-            <div class="footer__food">
-                <p class="footer__food--title">
-                    Let’sFood <img src="./imgs/logo.png" alt="" />
-                </p>
-                <p class="footer__food--des">
-                    Jalan Semangka Raya, Telaga Murni,Cikarang Barat, Kab. Bekasi
-                </p>
-                <div class="footer__food--icon">
-                    <a href=""><img src="./imgs/akar-icons_instagram-fill.png" alt="" srcset=""></a>
-                    <a href=""><img src="./imgs/bx_bxl-facebook.png" alt="" srcset=""></a>
-                    <a href=""><img src="./imgs/akar-icons_twitter-fill.png" alt="" srcset=""></a>
+    <section>
+        <div class="footer" id="footer">
+            <div class="footer__foot">
+                <div class="footer__food">
+                    <p class="footer__food--title">
+                        Let’sFood <img src="./imgs/logo.png" alt="" />
+                    </p>
+                    <p class="footer__food--des">
+                        Jalan Semangka Raya, Telaga Murni,Cikarang Barat, Kab. Bekasi
+                    </p>
+                    <div class="footer__food--icon">
+                        <a href=""><img src="./imgs/akar-icons_instagram-fill.png" alt="" srcset=""></a>
+                        <a href=""><img src="./imgs/bx_bxl-facebook.png" alt="" srcset=""></a>
+                        <a href=""><img src="./imgs/akar-icons_twitter-fill.png" alt="" srcset=""></a>
+                    </div>
+                </div>
+                <div class="footer__company">
+
+                    <p class="footer__company--title">Company</p>
+
+                    <p class="footer__company--des">About Us</p>
+                    <p class="footer__company--des">Career</p>
+                    <p class="footer__company--des">How It Work</p>
+                </div>
+                <div class="footer__policy">
+                    <p class="footer__policy--title">Policy</p>
+                    <p class="footer__policy--des">FAQ</p>
+                    <p class="footer__policy--des">Privacy</p>
+
+                    <p class="footer__policy--des">Shipping</p>
+
+                </div>
+                <div class="footer__touch">
+                    <p class="footer__touch--title">Get In Touch</p>
+
+                    <p class="footer__touch--des">+62 896 7311 2766</p>
+                    <p class="footer__touch--des">food@example.com</p>
+                </div>
+
+            </div>
+            <div class="footer--flex-end">
+                <div class="footer--line"></div>
+                <div class="footer--detail">© 2022 Let’sFood. ALL RIGHT RESERVED.</div>
+            </div>
+        </div>
+    </section>
+    <div id="modal" class="modal">
+        <div id="modal_overlay" class="modal__overlay">
+        </div>
+        <div id="modal_body" class="modal__body">
+            <div id="close_modal">
+                <a href="#" class="close-button">
+                  <div class="in">
+                    <div class="close-button-block"></div>
+                    <div class="close-button-block"></div>
+                  </div>
+                  <div class="out">
+                    <div class="close-button-block"></div>
+                    <div class="close-button-block"></div>
+                  </div>
+                </a>
+              </div>
+            <div class="modal__content">
+                <div id="formContainer">
+                    <div id="switch">
+                        <div class="bar"></div>
+                    </div>
+                    <form id="login">
+                        <div class="formHeader">
+                            <h1>Login</h1>
+                        </div>
+                        <div class="formDiv">
+                            <input id="user" type="text" placeholder="Username" name="username" />
+                            <div class="inputImage fa fa-user"></div>
+                        </div>
+                        <div class="formDiv">
+                            <input id="password" type="password" placeholder="Password" name="password" />
+                            <div class="inputImage fa fa-lock"></div>
+                        </div>
+                        <div class="formDiv">
+                            <label id="remember">
+                                <input type="checkbox" />
+                                <div class="checkbox"></div><span>Remember me</span>
+                            </label>
+                        </div>
+                        <div class="formDiv">
+                            <input id="button_login" type="button" value="LOGIN" />
+                        </div>
+                        <div class="formFooter"><a class="forgot" href="#">Forgot Password</a></div>
+                    </form>
+                    <form id="register">
+                        <div class="formHeader">
+                            <h1>Register</h1>
+                        </div>
+                        <div class="formDiv">
+                            <input id="ruser" type="text" placeholder="Username" name="username" />
+                            <div class="inputImage fa fa-user"></div>
+                        </div>
+                        <div class="formDiv">
+                            <input id="remail" type="email" placeholder="Email" name="email" />
+                            <div class="inputImage fa fa-envelope"></div>
+                        </div>
+                        <div class="formDiv">
+                            <input id="rpassword" type="password" placeholder="Password" name="password" />
+                            <div class="inputImage fa fa-lock"></div>
+                        </div>
+                        <div class="formDiv">
+                            <input id="repeatpass" type="password" placeholder="Repeat Password" name="password-repeat" />
+                            <div class="inputImage fa fa-lock"></div>
+                        </div>
+                        <div class="formDiv">
+                            <input id="button_register" type="button" value="REGISTER" />
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="footer__company">
-
-                <p class="footer__company--title">Company</p>
-
-                <p class="footer__company--des">About Us</p>
-                <p class="footer__company--des">Career</p>
-                <p class="footer__company--des">How It Work</p>
-            </div>
-            <div class="footer__policy">
-                <p class="footer__policy--title">Policy</p>
-                <p class="footer__policy--des">FAQ</p>
-                <p class="footer__policy--des">Privacy</p>
-
-                <p class="footer__policy--des">Shipping</p>
-
-            </div>
-            <div class="footer__touch">
-                <p class="footer__touch--title">Get In Touch</p>
-
-                <p class="footer__touch--des">+62 896 7311 2766</p>
-                <p class="footer__touch--des">food@example.com</p>
-            </div>
-
         </div>
-        <div class="footer--flex-end">
-            <div class="footer--line"></div>
-            <div class="footer--detail">© 2022 Let’sFood. ALL RIGHT REserviceD.</div>
-        </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"></script>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cuttr/1.4.1/cuttr.min.js"></script>
+    <script src="https://unpkg.com/cuttr@1.1.1/dist/cuttr.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./javascripts/index.js"></script>
-    <script src="./javascripts/swiper.js"></script>
-    <script src="./javascripts/cart.js"></script>
-    <!-- <script>
-        $('.buy').click(function () {
-            $('.bottom').addClass("clicked");
-            setTimeout(() => {
-                $('.bottom').removeClass("clicked");
-            }, 1000);
-        });
-    </script> -->
+
 </body>
 
 </html>
