@@ -1,7 +1,6 @@
 @import './abstracts/variables';
 @import './abstracts/mixins';
 @import './abstracts/functions';
-@import './abstracts/reset';
 
 @import './base/base';
 @import './base/animations';
@@ -13,15 +12,15 @@
 @import './components/composition';
 @import './components/skill-box';
 @import './components/card';
-@import './components/cart-icon';
-@import './components/swiper';
 
 @import './layout/header';
 @import './layout/section-hero';
 @import './layout/section-shopping-cart';
 @import './layout/grid';
 @import './layout/section-service';
-@import './layout/section-menu';
-@import './layout/section-about';
-@import './layout/section-discount';
-@import './layout/footer';
+@import './layout//section-menu';
+@import './layout//section-about';
+@import './layout//section-discount';
+@import './layout/section-footer';
+@import './layout/section-login';
+@import './layout/section-logout';

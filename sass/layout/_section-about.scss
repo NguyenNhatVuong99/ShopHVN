@@ -1,9 +1,8 @@
 @import '../abstracts/functions';
 @import '../abstracts/mixins';
 @import '../abstracts/variables';
-
-.section {
-    &__about {
+.section{
+&__about {
 
         @include padding(45px 141px 80px 200px);
         height: 410px;
@@ -17,13 +16,12 @@
         &--food {
             @include displayFlexCenter(flex-start, flex-start)
         }
-
+       
     }
-
-    &__about-mon12 {
-        width: 238px;
-        height: 238px;
-    }
+         &__about-mon12 {
+             width: 238px;
+             height: 238px;
+         }
 
     &__about-right {
         flex: 1;
@@ -31,7 +29,7 @@
 
         &--title {
             @include title2();
-            color: $yellowBg;
+            color:$yellowBg;
             padding-top: 21px;
         }
 
@@ -43,46 +41,26 @@
 
 
     }
-
-    &__about-comment {
-        width: 451px;
-        background-color: #F1F1F1;
-        border-radius: 10px;
-        padding: 30px 20px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 19px;
-        flex-wrap: wrap;
-        
-
-        &--content {
-            @include body-text();
-        }
-
+         &__about-comment {
+             width: 451px;
+             background-color: #F1F1F1;
+             border-radius: 10px;
+             @include padding(30px 20px);
+             @include displayFlexCenter(flex-start, flex-start, 19px);
+             flex-wrap: wrap;
+    
+             &--content {
+                 @include body-text();
+             }
+    
+         }
+    
+         &__about-auth {
+             @include displayFlexCol(flex-start, flex-start, 13px);
+    
+             &--name {
+                 @include headerLine();
+             }
+    
+         }
     }
-
-    &__about-auth {
-        @include displayFlexCol(flex-start, flex-start, 13px);
-
-        &--name {
-            @include headerLine();
-        }
-
-    }
-
-      
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-   
-}

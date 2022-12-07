@@ -1,13 +1,9 @@
-.section {
-	// background-color: $color-grey-light-1;
-	// padding: 25rem 0;
-    // margin-top: -25rem;
-    height: auto;
-    @include padding(80px 204px);
-    @include displayFlexCol(center, center);
-
+.selection-about {
+	background-color: $color-grey-light-1;
+	padding: 25rem 0;
+    margin-top: -25rem;
 }
-.section-skills {
+.selection-skills {
 	background-color: #f7f7f7;
 	margin-top: -20rem;
     padding: 20rem 0;
@@ -19,7 +15,7 @@
 	background-size: cover;
 	clip-path: ellipse(70% 50% at 50% 50%);
 }
-.section-courses{
+.selection-courses{
 	margin-top: -15rem;
     padding: 20rem 0;
 	background-color: $color-grey-light-1;

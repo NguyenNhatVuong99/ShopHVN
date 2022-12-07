@@ -1,11 +1,10 @@
-.section-hero{
-    background:
-    url('../imgs/background-hero.png');
-	background-size: cover;
-	height: 90vh;
-	background-attachment: fixed;
-	position: relative;
-        clip-path: ellipse(76% 60% at 50% 35%);
+.section-hero {
+    background: url('../imgs/background-hero.png');
+    background-size: cover;
+    height: 90vh;
+    background-attachment: fixed;
+    position: relative;
+    clip-path: ellipse(76% 60% at 50% 35%);
     top: 0;
     padding: $padding;
 }

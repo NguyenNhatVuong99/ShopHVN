@@ -24,7 +24,7 @@
 		color:$color-grey;
 	}
 	&--animated {
-		animation: moveInBottom 2s ease-in-out 1s;
+		animation: moveInBottom 1s ease-in-out 1s;
 		animation-fill-mode: backwards
 	}
 }
@@ -52,8 +52,9 @@
 		transform: translateY(0)
 	}
 }
-.btn--large{
-    padding: 12px;
+.btn--small{
+  
+
 }
 .btn--blue{
 	background-color: $color-medium-blue;
